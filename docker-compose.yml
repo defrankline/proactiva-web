@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  proactiva-web:
+    container_name: proactiva-web
+    image: 'proactiva-web'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
